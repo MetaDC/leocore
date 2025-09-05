@@ -1,0 +1,3912 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from netizensstore.com/gymfit_theme/html/multipage_3/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 10:08:44 GMT -->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Leocor Gym & Fitness" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leocor Gym & Fitness | Vadodara - Gujarat</title>
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="assets/images/logo/icon-gym.png"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    /> -->
+    <style>
+      @font-face {
+        font-family: "energystation";
+        src: url("assets/fonts/energystation-gwma5.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "aeromove";
+        src: url("assets/fonts/AeromoveDemoRegular.ttf") format("truetype");
+      }
+
+      /* whatshapp */
+      .whatsapp-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 10px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        font-weight: 600;
+      }
+
+      .whatsapp-btn i {
+        font-size: 1.2rem;
+      }
+
+      .whatsapp-btn:hover {
+        background-color: #ffdd00;
+        /* Yellow background on hover */
+        color: #000;
+        /* Black text/icon on hover for contrast */
+        border-color: #ffdd00;
+      }
+
+      /* Modal Background */
+      .modal-content {
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        /* background-color: transparent; */
+        max-width: 500px;
+        margin: auto;
+      }
+
+      /* Modal Header */
+      .modal-header {
+        border: none;
+        padding-bottom: 0;
+      }
+
+      .modal-title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .model-body {
+        padding: 1.2rem !important;
+      }
+
+      /* Modal Body */
+      .modal-body p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #555;
+        margin-bottom: 30px;
+      }
+
+      /* Input Fields */
+      /* Input Fields */
+      .form-control {
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        padding: 14px 16px;
+        font-size: 14px;
+      }
+
+      /* Add this */
+      .form-control:focus,
+      .country-code:focus {
+        border: 1px solid #000;
+        outline: none;
+        box-shadow: none;
+      }
+
+      .phone-group {
+        gap: 10px;
+      }
+
+      .country-code {
+        border-radius: 8px;
+        padding: 12px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+      }
+
+      /* Button Styling */
+      .btn-dark {
+        border-radius: 30px;
+        padding: 12px 20px;
+        font-weight: 600;
+        font-size: 14px;
+        background-color: #000;
+        border: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-dark:hover {
+        background-color: #333;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 576px) {
+        .modal-content {
+          padding: 20px;
+        }
+
+        .phone-group {
+          flex-direction: column;
+        }
+
+        .country-code,
+        .phone-number {
+          width: 100%;
+        }
+      }
+
+      /* course Img Design */
+      .course-img {
+        /* width: 100%; */
+        overflow: hidden;
+        height: 250px;
+        /* object-fit: cover; */
+      }
+      @media (max-width: 768px) {
+        .course-img {
+          width: 100%;
+          height: 100%;
+          /* Or width: auto; depending on layout */
+        }
+      }
+      /* Default for desktop */
+      .responsive-title {
+        width: 700px;
+        height: 100px;
+        font-weight: 200;
+        font-size: 30px;
+      }
+
+      .responsive-title span {
+        display: block;
+        /* moves it to its own line */
+        font-size: 75px;
+        font-weight: 500;
+        /* optional highlight color */
+      }
+
+      .responsive-title h2 {
+        font-size: 10px;
+      }
+
+      .hed-title {
+        font-weight: 600;
+        font-size: 80px;
+      }
+
+      /* Override on mobile */
+      @media (max-width: 768px) {
+        .responsive-title {
+          width: 100%;
+          font-size: 18px;
+          height: 90%;
+          /* Or width: auto; depending on layout */
+        }
+
+        .responsive-title span {
+          display: block;
+          /* moves it to its own line */
+          font-size: 32px;
+          font-weight: 600;
+        }
+      }
+
+      .d-none {
+        display: none;
+      }
+
+      .gallery {
+        margin-top: -10px;
+        height: 90vh;
+        max-height: 730px;
+        /* overflow: hidden; */
+      }
+
+      @media (max-width: 768px) {
+        .gallery {
+          height: 150vh;
+          max-height: 600px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .gallery {
+          height: 150vh;
+          max-height: 550px;
+        }
+      }
+
+      /* Dropdown menu style */
+      .custom-dropdown {
+        background-color: #000;
+        /* Black background */
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        min-width: 180px;
+      }
+
+      /* Dropdown items */
+      .custom-dropdown .dropdown-item {
+        color: #fff;
+        /* White text */
+        padding: 10px 15px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      /* Hover effect */
+      .custom-dropdown .dropdown-item:hover {
+        background-color: #111;
+        /* Slightly lighter black */
+        color: #ffcc00;
+        /* Yellow accent */
+      }
+
+      /* Arrow color fix (caret icon) */
+      .navbar .dropdown-toggle::after {
+        border-top-color: #fff;
+        /* White arrow */
+      }
+
+      .owner-image-container {
+        max-width: 45%;
+      }
+
+      .image-caption {
+        font-size: 15px;
+        font-weight: 500;
+        color: #333;
+      }
+
+      .blackImg {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      }
+
+      /*  */
+      /*  */
+      /* ✅ Shared styles for all logos */
+      /* Common logo styles */
+      .brand-row img,
+      .swiper-slide img {
+        width: 200px;
+        transition: transform 0.3s ease;
+      }
+
+      .brand-row img:hover,
+      .swiper-slide img:hover {
+        transform: scale(1.1);
+      }
+
+      /* Desktop View: Static Row */
+      .brand-desktop {
+        display: block;
+        background: #fff;
+        padding: 30px 0;
+      }
+
+      .brand-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Mobile View: Hidden by default */
+      .brand-mobile {
+        display: none;
+        background: #fff;
+        /* padding: 30px 0; */
+      }
+
+      /* Show swiper only on mobile */
+      @media (max-width: 768px) {
+        .brand-desktop {
+          display: none;
+        }
+
+        .brand-mobile {
+          display: block;
+        }
+      }
+
+      /* Swiper Layout */
+      .swiper-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+      }
+
+      .swiper-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* ladi pricing  */
+      /* === Modal Card === */
+      .promo-modal-content {
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        border: none;
+        /* background-color: #fff; */
+        max-width: 800px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      /* === Left Image Section === */
+      .promo-image-section {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+
+      .promo-image-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* === Right Form Section === */
+      .promo-form-section {
+        flex: 1;
+        padding: 24px !important;
+        background-color: #fff;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .promo-form-section h2 {
+        font-size: 23px;
+        font-weight: 700;
+        color: #000;
+      }
+
+      .promo-form-section p {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 24px;
+      }
+
+      /* === Input Styling === */
+      .phone-number {
+        padding: 14px 16px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        transition: border-color 0.3s;
+        width: 100%;
+      }
+
+      .phone-number:focus {
+        border-color: #000;
+        outline: none;
+      }
+
+      /* === Button Styling === */
+      #enquiryForm button[type="submit"] {
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 14px 20px;
+        border-radius: 12px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+        border: none;
+      }
+
+      #enquiryForm button[type="submit"]:hover {
+        background-color: #333;
+      }
+
+      /* === Responsive Fixes === */
+      @media (max-width: 768px) {
+        .promo-modal-content {
+          flex-direction: column;
+          border-radius: 16px;
+        }
+
+        .promo-image-section {
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+          border-bottom-left-radius: 0;
+        }
+
+        .promo-form-section {
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 16px;
+          border-bottom-right-radius: 16px;
+        }
+
+        .promo-image-section img {
+          height: 300px;
+          width: 100%;
+        }
+      }
+      /* Close Button - Top Right Over Image */
+      .custom-close-btn {
+        position: absolute;
+        color: #000;
+        top: 8px;
+        right: 14px;
+        z-index: 10;
+        /* background: none; */
+        border: none;
+        font-size: 1.2rem;
+        opacity: 0.6;
+        transition: opacity 0.2s ease;
+      }
+
+      .custom-close-btn:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://elfsightcdn.com/platform.js" async></script> -->
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+      import {
+        getFirestore,
+        doc,
+        collection,
+        getDoc,
+        getDocs,
+      } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCrXGwPCzUAnICBB962RSZsZFFwcvOcYzQ",
+        authDomain: "leocor-admin.firebaseapp.com",
+        projectId: "leocor-admin",
+        storageBucket: "leocor-admin.firebasestorage.app",
+        messagingSenderId: "562763221889",
+        appId: "1:562763221889:web:84ec82c0254d95c2677680",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      let modalInstance = null;
+      let modalAlreadyShown = false;
+
+      async function loadModalContent() {
+        const docRef = doc(db, "popupInfo", "sets");
+
+        try {
+          const docSnap = await getDoc(docRef);
+          if (!docSnap.exists()) {
+            console.warn("No popupInfo/sets document found.");
+            return;
+          }
+
+          const data = docSnap.data();
+          console.log("Popup data from Firestore:", data);
+
+          const modalEl = document.getElementById("myModal");
+          if (!modalEl) return;
+
+          // Check if pricing modal is open
+          const pricingModal = document.getElementById("pricingModal");
+          const pricingModalIsOpen =
+            pricingModal && pricingModal.classList.contains("show");
+
+          if (pricingModalIsOpen) {
+            console.log("Pricing modal is open. Enquiry modal will not show.");
+            return;
+          }
+
+          // Populate modal content
+          const modalTitle = modalEl.querySelector("#enquiryModalLabel");
+          const modalDesc = modalEl.querySelector(".modal-body p");
+          const submitTextSpan = modalEl.querySelector(".submitBtnText");
+          const modalImg = modalEl.querySelector(".promo-image-section img");
+          if (modalImg && data.imgUrl) {
+            modalImg.src = data.imgUrl;
+          }
+
+          if (modalTitle) modalTitle.textContent = data.title || "";
+          if (modalDesc) modalDesc.textContent = data.desc || "";
+          if (submitTextSpan) submitTextSpan.textContent = data.btntext || "";
+
+          // Show modal if enabled and not already shown
+          if (data.isEnabled === true && !modalAlreadyShown) {
+            setTimeout(() => {
+              const pricingModalStillOpen = document
+                .getElementById("pricingModal")
+                ?.classList.contains("show");
+              const anyModalStillOpen =
+                document.querySelectorAll(".modal.show").length > 0;
+
+              if (!pricingModalStillOpen && !anyModalStillOpen) {
+                if (!modalInstance) {
+                  modalInstance = new bootstrap.Modal(modalEl);
+                }
+                modalInstance.show();
+                modalAlreadyShown = true;
+                sessionStorage.setItem("enquiryModalShown", "true");
+              } else {
+                console.log("Modal conditions not met after delay.");
+              }
+            }, 5000);
+          }
+        } catch (err) {
+          console.error("Error loading modal content:", err);
+        }
+      }
+
+      function startPollingModalContent() {
+        loadModalContent();
+        // setInterval(loadModalContent, 5000);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const myModalEl = document.getElementById("myModal");
+
+        if (myModalEl) {
+          myModalEl.addEventListener("hidden.bs.modal", function () {
+            modalAlreadyShown = false;
+            document.body.classList.remove("modal-open");
+            document
+              .querySelectorAll(".modal-backdrop")
+              .forEach((el) => el.remove());
+          });
+        }
+
+        // Load all initial content
+        loadModalContent();
+        loadUrlContent?.();
+        loadCoursesImg?.();
+        startPollingModalContent();
+      });
+
+      // 🔗 Load video URL
+      async function loadUrlContent() {
+        const docRef = doc(db, "urlLink", "link");
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          console.log("Video URL Data:", data);
+
+          if (data.ytVedioLink) {
+            document.getElementById("videoThumbnailLink").href =
+              data.ytVedioLink;
+            document.getElementById("videoButtonLink").href = data.ytVedioLink;
+          } else {
+            console.warn("ytVedioLink field is missing.");
+          }
+        } else {
+          console.warn("No such document in urlLink/link");
+        }
+      }
+
+      async function loadCoursesImg() {
+        const collectionRef = collection(db, "gallery");
+        let gallery = [];
+
+        try {
+          const querySnapshot = await getDocs(collectionRef);
+
+          gallery = querySnapshot.docs
+            .map((docSnap) => ({
+              id: docSnap.id,
+              ...docSnap.data(),
+            }))
+            .filter((item) => item.isVisible === true);
+
+          console.log("Visible Gallery Items:", gallery);
+
+          const courseListContainer =
+            document.querySelector(".course-list .row");
+          if (courseListContainer) {
+            courseListContainer.innerHTML = "";
+
+            gallery.slice(0, 8).forEach((item) => {
+              courseListContainer.innerHTML += `
+            <div class="col-lg-4 col-md-6">
+              <div class="item">
+                <div class="course_box1">
+                  <div class="img_course1">
+                    <img
+                      class="img-responsive course-img"
+                      src="${item.imageUrl}"
+                      alt="${item.title}"
+                    />
+                    <a href="gallery.html?id=${item.id}" class="course_read">EXPLORE</a>
+                  </div>
+                  <div class="course_con1">
+                    <h3>${item.title}</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+            });
+          }
+        } catch (error) {
+          console.error("Error fetching gallery:", error);
+        }
+      }
+    </script>
+
+    <!-- example of whatsapp -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="pricingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content promo-modal-content p-2"
+          style="background-color: transparent"
+        >
+          <div
+            class="modal-body d-flex flex-column flex-md-row p-0 position-relative"
+          >
+            <button
+              type="button"
+              class="btn-close custom-close-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <!-- Left: Image -->
+            <div class="promo-image-section">
+              <img
+                src="assets/images/t2.png"
+                alt="Fitness Woman"
+                class="img-fluid"
+              />
+            </div>
+
+            <!-- Right: Form Content -->
+            <div class="promo-form-section p-4">
+              <h2 class="modal-title fw-bold mb-3" id="enquiryModalLabel">
+                Ladies First,Always!
+              </h2>
+              <p class="mb-4">
+                Specially for Women – Flat 25% OFF on our Annual Memberships.
+              </p>
+
+              <form id="enquiryForm">
+                <!-- Phone -->
+                <div class="mb-3 d-flex phone-group">
+                  <input
+                    type="tel"
+                    name="phone"
+                    class="form-control phone-number"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  class="btn btn-dark w-100 d-flex justify-content-center align-items-center"
+                >
+                  <span class="submitBtnText">Claim </span>
+                  <span
+                    class="submitLoader spinner-border spinner-border-sm text-light ms-2 d-none"
+                    role="status"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us Popup Modal -->
+    <!-- Get Quote Modal -->
+    <div
+      style="display: none"
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="pricingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-2">
+          <div class="modal-header border-0 pb-3">
+            <h1
+              class="modal-title fw-bold mb-2"
+              style="font-size: 22px"
+              id="enquiryModalLabel"
+            >
+              Register now with Leocor!
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body pt-0">
+            <p class="mb-5">Enter your details to register now.</p>
+
+            <form id="enquiryForm">
+              <!-- Phone -->
+              <div class="mb-3 d-flex phone-group">
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control phone-number p-3"
+                  placeholder="Phone Number"
+                  style="font-size: 14px"
+                  required
+                />
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="btn btn-dark w-100 d-flex justify-content-center align-items-center"
+              >
+                <span class="submitBtnText">Get Quote</span>
+                <span
+                  class="submitLoader spinner-border spinner-border-sm text-light ms-2 d-none"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="pricingModal"
+      tabindex="-1"
+      aria-labelledby="pricingLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-2">
+          <div class="modal-header border-0 pb-3">
+            <h1
+              class="modal-title fw-bold mb-2"
+              style="font-size: 22px"
+              id="pricingModalLabel"
+            >
+              Get Instant Pricing – For Free!
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body pt-0">
+            <p class="mb-5">
+              Enter your details and get instant pricing, completely free.
+            </p>
+
+            <form id="pricingForm">
+              <!-- Full Name -->
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control p-3"
+                  placeholder="Your Full Name"
+                  style="font-size: 14px"
+                  required
+                />
+              </div>
+
+              <!-- Country Code & Phone -->
+              <div class="mb-3 d-flex phone-group">
+                <select name="countryCode" class="country-code me-2" required>
+                  <option selected>🇮🇳 +91 (India)</option>
+                  <option>🇺🇸 +1 (USA)</option>
+                </select>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control phone-number p-3"
+                  placeholder="Phone Number"
+                  style="font-size: 14px"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control p-3"
+                  placeholder="Your Email Address"
+                  style="font-size: 14px"
+                  required
+                />
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="btn btn-dark w-100 d-flex justify-content-center align-items-center"
+              >
+                <span class="submitBtnText">Get Quote</span>
+                <span
+                  class="submitLoader spinner-border spinner-border-sm text-light ms-2 d-none"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="ownerModal"
+      tabindex="-1"
+      aria-labelledby="pricingLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-2">
+          <div class="modal-header border-0 pb-3">
+            <h1
+              class="modal-title fw-bold mb-2"
+              style="font-size: 22px"
+              id="pricingModalLabel"
+            >
+              About the Owner
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex flex-wrap justify-content-center align-items-center"
+          >
+            <!-- Owner 1 -->
+            <div class="owner-image-container text-center m-2">
+              <img
+                src="assets/images/trainers/leocorgym-owners.webp"
+                alt="Owner 1"
+                class="img-fluid"
+                style="max-width: 100%; height: auto"
+              />
+              <!-- <div class="image-caption mt-2">John Doe</div> -->
+            </div>
+
+            <!-- Owner 2
+            <div class="owner-image-container text-center m-2">
+              <img
+                src="assets/images/trainer/trainer-1.png"
+                alt="Owner 2"
+                class="img-fluid"
+                style="max-width: 100%; height: auto"
+              />
+              <div class="image-caption mt-2">Jane Smith</div>
+            </div> -->
+
+            <!-- Description -->
+            <p class="mt-3 w-100">
+              Leocor Gym & Fitness was founded by Sahim and Samir Patel, driven
+              by their shared passion for fitness and commitment to building a
+              world-class training space.
+            </p>
+          </div>
+          <div class="modal-body pt-0" style="display: none">
+            <p class="mb-5">
+              Enter your details and get instant pricing, completely free.
+            </p>
+
+            <form id="pricingForm">
+              <!-- Full Name -->
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control p-3"
+                  placeholder="Your Full Name"
+                  style="font-size: 14px"
+                  required
+                />
+              </div>
+
+              <!-- Country Code & Phone -->
+              <div class="mb-3 d-flex phone-group">
+                <select name="countryCode" class="country-code me-2" required>
+                  <option selected>🇮🇳 +91 (India)</option>
+                  <option>🇺🇸 +1 (USA)</option>
+                </select>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control phone-number p-3"
+                  placeholder="Phone Number"
+                  style="font-size: 14px"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control p-3"
+                  placeholder="Your Email Address"
+                  style="font-size: 14px"
+                  required
+                />
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="btn btn-dark w-100 d-flex justify-content-center align-items-center"
+              >
+                <span class="submitBtnText">Get</span>
+                <span
+                  class="submitLoader spinner-border spinner-border-sm text-light ms-2 d-none"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="ownerModal"
+      tabindex="-1"
+      aria-labelledby="ownerModalLabel"
+      aria-hidden="true"
+      style="display: none"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ownerModalLabel">About the Owner</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div
+            class="modal-body d-flex flex-wrap justify-content-center align-items-center"
+          >
+            <!-- Owner 1 -->
+            <div class="owner-image-container text-center m-2">
+              <img
+                src="assets/images/trainers/leocorgym-owners.webp"
+                alt="Owner 1"
+                class="img-fluid"
+                style="max-width: 100%; height: auto"
+              />
+              <!-- <div class="image-caption mt-2">John Doe</div> -->
+            </div>
+
+            <!-- Owner 2
+            <div class="owner-image-container text-center m-2">
+              <img
+                src="assets/images/trainer/trainer-1.png"
+                alt="Owner 2"
+                class="img-fluid"
+                style="max-width: 100%; height: auto"
+              />
+              <div class="image-caption mt-2">Jane Smith</div>
+            </div> -->
+
+            <!-- Description -->
+            <p class="mt-3 w-100">
+              John Doe is the passionate founder of our company, with over 20
+              years of experience in the industry. His vision and dedication are
+              the driving force behind our success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us Popup Modal End -->
+    <!-- loader start -->
+    <div class="page_loader">
+      <img src="assets/images/loader/new-loader.svg" alt="img" />
+    </div>
+    <!-- loader end -->
+    <div class="page-wrapper">
+      <!-- header start-->
+      <header class="main-header">
+        <div class="header-top">
+          <div class="container clearfix">
+            <div class="row justify-content-between">
+              <div class="col-xl-4 col-lg-6 col-md-6">
+                <div
+                  class="top-left d-flex align-items-center justify-content-between clearfix"
+                >
+                  <div class="phone pull-left">
+                    <a href="https://wa.me/8320279007">
+                      <img src="assets/images/call.svg" alt="call" />
+                      832 0279 007
+                    </a>
+                  </div>
+                  <div class="email pull-left">
+                    <a href="mailto:info@leocorgym.com"
+                      ><img src="assets/images/mail.svg" alt="mail" />
+                      info@leocorgym.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-3">
+                <div class="top-right clearfix">
+                  <div
+                    class="social d-flex align-items-center justify-content-end"
+                  >
+                    <span class="txt"> Follow on </span
+                    ><a
+                      class="circlef"
+                      target="_blank"
+                      href="https://www.facebook.com/itsleocor"
+                      ><img
+                        src="assets/images/facebook.svg"
+                        alt="facebook" /></a
+                    ><a
+                      class="circlei"
+                      target="_blank"
+                      href="https://www.instagram.com/leocorgym
+"
+                      ><img src="assets/images/instagram.svg" alt="instagram"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-lower">
+          <div class="container clearfix">
+            <nav class="navbar navbar-expand-lg main-menu">
+              <div class="container-fluid">
+                <div class="logo pull-left">
+                  <a href="index.html">
+                    <img
+                      class="logo_name"
+                      width="150"
+                      src="assets/images/logo/logo.png"
+                      alt="logo"
+                    />
+                    <!-- <h2 class="logo_name">
+                      GYM <span class="white_text">FIT </span>
+                    </h2> -->
+                  </a>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="icon-bar"></span> <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="nav navbar-nav navbar-right ms-auto" id="onenav">
+                    <li class="nav-link current">
+                      <a href="index.html" class="js-scroll-trigger">HOME</a>
+                    </li>
+                    <li class="nav-link">
+                      <a href="#aboutus" class="js-scroll-trigger">ABOUT US</a>
+                    </li>
+                    <!-- <li class="nav-link dropdown">
+                      <a
+                        class="nav-item dropdown-toggle js-scroll-trigger"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="color: #fff"
+                      >
+                        ABOUT US
+                      </a>
+                      <ul
+                        class="dropdown-menu custom-dropdown"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ownerModal"
+                            >About Owner</a
+                          >
+                        </li>
+                      </ul>
+                    </li> -->
+
+                    <li class="nav-link">
+                      <a href="#gallery" class="js-scroll-trigger"
+                        >OUR PROGRAMS</a
+                      >
+                    </li>
+                    <li class="nav-link">
+                      <a href="/gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-link">
+                      <a
+                        href="#"
+                        class="js-scroll-trigger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#pricingModal"
+                      >
+                        PRICING
+                      </a>
+                    </li>
+                    <li class="nav-link">
+                      <a href="#contactus" class="js-scroll-trigger">CONTACT</a>
+                    </li>
+                    <li class="social_nav">
+                      <div class="social">
+                        <span class="txt"> Follow on </span
+                        ><a class="circlef" href="#"
+                          ><i class="fa fa-facebook-f"></i></a
+                        ><a class="circlei" href="#"
+                          ><i class="fa fa-instagram"></i
+                        ></a>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- header end-->
+
+      <!-- carousel start-->
+      <!-- <section class="slider">
+        <div
+          class="carousel fade-carousel slide"
+          data-bs-ride="carousel"
+          data-interval="4000"
+          id="bs-carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#bs-carousel"
+              data-bs-slide-to="0"
+              class="active first"
+            >
+              <p></p>
+              <span> </span>
+            </li>
+            <li data-bs-target="#bs-carousel" data-bs-slide-to="1" class="sec">
+              <p></p>
+              <span> </span>
+            </li>
+            <li data-bs-target="#bs-carousel" data-bs-slide-to="2" class="last">
+              <p></p>
+              <span> </span>
+            </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item item slides active">
+              <div class="slide-1"></div>
+              <div class="hero">
+                <h2 class="sec-title title">
+                  <span>Strength</span> Lorem ipsum dolor
+                </h2>
+                <br />
+               
+                <a href="#contactus" class="btn btn-hero btn-lg" role="button"
+                  >Join now !</a
+                >
+              </div>
+            </div>
+            <div class="carousel-item item slides">
+              <div class="slide-2"></div>
+              <div class="hero">
+                <h2 class="sec-title title">
+                  <span>Endurance</span> Lorem ipsum dolor
+                </h2>
+                <br />
+             
+                <a href="#contactus" class="btn btn-hero btn-lg" role="button"
+                  >Join now !</a
+                >
+              </div>
+            </div>
+            <div class="carousel-item item slides">
+              <div class="slide-3"></div>
+              <div class="hero">
+                <h2 class="sec-title title">
+                  <span>Mobility</span> Lorem ipsum dolor
+                </h2>
+                <br />
+            
+                <a href="#contactus" class="btn btn-hero btn-lg" role="button"
+                  >Join now !</a
+                >
+              </div>
+            </div>
+            <a
+              class="left carousel-control"
+              href="#bs-carousel"
+              data-bs-slide="prev"
+            >
+              prev
+            </a>
+            <a
+              class="right carousel-control"
+              href="#bs-carousel"
+              data-bs-slide="next"
+            >
+              Next
+            </a>
+          </div>
+        </div>
+      </section> -->
+      <!-- carousel end-->
+      <section class="slider">
+        <div
+          class="carousel fade-carousel slide"
+          data-bs-ride="carousel"
+          data-interval="4000"
+          id="bs-carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#bs-carousel"
+              data-bs-slide-to="0"
+              class="active first"
+            >
+              <p></p>
+              <span> </span>
+            </li>
+            <li data-bs-target="#bs-carousel" data-bs-slide-to="1" class="sec">
+              <p></p>
+              <span> </span>
+            </li>
+            <li data-bs-target="#bs-carousel" data-bs-slide-to="2" class="last">
+              <p></p>
+              <span> </span>
+            </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item item slides active">
+              <div class="slide-1"></div>
+              <div class="hero">
+                <h2 class="sec-title responsive-title">
+                  <span
+                    class="hed-title"
+                    style="font-family: 'energystation', sans-serif"
+                    >Largest</span
+                  >
+                  Warehouse Gym Of Gujarat
+                </h2>
+                <br />
+                <!-- <p>
+                  We offer as well hardcore strength machines, curve treadmills,
+                  boxing studio, TRX, and spinning.
+                </p> -->
+                <a href="#contactus" class="btn btn-hero btn-lg" role="button"
+                  >Join now !</a
+                >
+              </div>
+            </div>
+            <div class="carousel-item item slides">
+              <div class="slide-2"></div>
+              <div class="hero">
+                <h2 class="sec-title responsive-title">
+                  <span
+                    class="hed-title"
+                    style="font-family: 'energystation', sans-serif"
+                    >Your Ultimate</span
+                  >
+                  Fitness Destination
+                </h2>
+                <br />
+                <!-- <p>
+                  We offer as well hardcore strength machines, curve treadmills,
+                  boxing studio, TRX, and spinning.
+                </p> -->
+                <a href="#contactus" class="btn btn-hero btn-lg" role="button"
+                  >Join now !</a
+                >
+              </div>
+            </div>
+            <div class="carousel-item item slides">
+              <div class="slide-3"></div>
+              <div class="hero">
+                <h2 class="sec-title responsive-title">
+                  <span
+                    class="hed-title"
+                    style="font-family: 'energystation', sans-serif"
+                    >Redefining</span
+                  >
+                  Fitness in Vadodara
+                </h2>
+                <br />
+                <!-- <p>
+                  We offer as well hardcore strength machines, curve treadmills,
+                  boxing studio, TRX, and spinning.
+                </p> -->
+                <a href="#contactus" class="btn btn-hero btn-lg" role="button"
+                  >Join now !</a
+                >
+              </div>
+            </div>
+            <a
+              class="left carousel-control"
+              href="#bs-carousel"
+              data-bs-slide="prev"
+            >
+              prev
+            </a>
+            <a
+              class="right carousel-control"
+              href="#bs-carousel"
+              data-bs-slide="next"
+            >
+              Next
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- about start-->
+      <section class="about_sec" id="aboutus">
+        <div class="about-section">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-xl-6 col-lg-7 col-md-5 d-none d-md-block">
+                <div class="abt_left">
+                  <div class="img-wrap">
+                    <img
+                      class="about_img1"
+                      style="height: 600px"
+                      src="assets/images/about-0.webp"
+                      alt="about-img1"
+                    />
+                    <img
+                      class="about_img2"
+                      style="height: 600px"
+                      src="assets/images/about-3.webp"
+                      alt="about-img2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-5 col-md-6">
+                <div class="abt_right">
+                  <h2 class="title">
+                    <span>GUJARAT’S</span>
+                    LARGEST WAREHOUSE GYM
+                  </h2>
+                  <p>
+                    We are proud to be Gujarat’s largest warehouse-style gym,
+                    located in Vadodara and built to international standards.
+                    Designed with premium equipment and world-class training
+                    facilities, we provide a fitness experience unlike any
+                    other.
+                  </p>
+                  <p>
+                    With 7-star amenities, an in-house Food & Nutrition Café,
+                    personalised diet and nutrition plans, and a dedicated
+                    supplement store, we go beyond workouts to support your
+                    complete fitness lifestyle.
+                  </p>
+                  <a
+                    href="#gallery"
+                    class="primary-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#ownerModal"
+                    style="font-size: 16px"
+                  >
+                    Founder’s Profile
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about end-->
+      <div class="brand-desktop">
+        <div class="brand-row">
+          <img src="assets/images/brandlogo/bullrock.png" alt="Brand 1" />
+          <img src="assets/images/brandlogo/hammer.png" alt="Brand 2" />
+          <img src="assets/images/brandlogo/jerai.png" alt="Brand 3" />
+          <img src="assets/images/brandlogo/r-usa.png" alt="Brand 4" />
+          <img src="assets/images/brandlogo/xebex-icon.png" alt="Brand 5" />
+        </div>
+      </div>
+
+      <!-- ✅ Mobile View: Swiper Row Slider -->
+      <div class="brand-mobile">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/brandlogo/bullrock.png" alt="Brand 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/brandlogo/hammer.png" alt="Brand 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/brandlogo/jerai.png" alt="Brand 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/brandlogo/r-usa.png" alt="Brand 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/brandlogo/xebex-icon.png" alt="Brand 5" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+      <!--Course start-->
+      <section class="course_sec" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="title_box_course">
+                <!-- <div class="course_sec_img">
+                  <img
+                    class="img-responsive"
+                    src="assets/images/title-bg.png"
+                    alt=""
+                  />
+                </div> -->
+                <div
+                  class="course_sec_title"
+                  style="font-family: 'shocksurgent', sans-serif"
+                >
+                  <h2>our Programs</h2>
+                  <p>we aim to transform your abilities</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="course-list">
+            <div class="row">
+              <!-- <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="course_box1">
+                    <div class="img_course1">
+                      <img
+                        class="img-responsive"
+                        src="assets/images/gallery/gallery-sample-min.png"
+                        alt=""
+                      /><a href="#" class="course_read">Read More</a>
+                    </div>
+                    <div class="course_con1">
+                      <h3>Weight Training</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="course_box1">
+                    <div class="img_course1">
+                      <img
+                        class="img-responsive"
+                        src="assets/images/gallery/gallery-sample-min.png"
+                        alt=""
+                      />
+                      <a href="#" class="course_read">Read More</a>
+                    </div>
+                    <div class="course_con1">
+                      <h3>Cardio</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="course_box1">
+                    <div class="img_course1">
+                      <img
+                        class="img-responsive"
+                        src="assets/images/gallery/gallery-sample-min.png"
+                        alt=""
+                      />
+                      <a href="#" class="course_read">Read More</a>
+                    </div>
+                    <div class="course_con1">
+                      <h3>Zumba</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="course_box1">
+                    <div class="img_course1">
+                      <img
+                        class="img-responsive"
+                        src="assets/images/gallery/gallery-sample-min.png"
+                        alt=""
+                      /><a href="#" class="course_read">Read More</a>
+                    </div>
+                    <div class="course_con1">
+                      <h3>Strong By Zumba</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="course_box1">
+                    <div class="img_course1">
+                      <img
+                        class="img-responsive"
+                        src="assets/images/gallery/gallery-sample-min.png"
+                        alt=""
+                      /><a href="#" class="course_read">Read More</a>
+                    </div>
+                    <div class="course_con1">
+                      <h3>Power Yoga</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="item">
+                  <div class="course_box1">
+                    <div class="img_course1">
+                      <img
+                        class="img-responsive"
+                        src="assets/images/gallery/gallery-sample-min.png"
+                        alt=""
+                      />
+                      <a href="#" class="course_read">Read More</a>
+                    </div>
+                    <div class="course_con1">
+                      <h3>Functional Training</h3>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Course end-->
+
+      <!--Trainers start-->
+      <section class="inner_trainer Trainer_sec" id="Trainer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="" style="text-align: center">
+                <h2 class="title">
+                  <span>Trainers</span>Committed Certified Professionals
+                </h2>
+                <!-- <p class="aftertitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestib ulum porttitor egestas orci, vinec at velit vestibulum,
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div class="trainers-list carousel">
+            <div class="owl-carousel owl-theme ss_carousel" id="slider3">
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/jaipal-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Jaipal Singh Jajua</h3>
+                    <p>15 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/nayan-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Nayan M Patel</h3>
+                    <p>15 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/nawaz-min-modified.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Nawaz Mirza</h3>
+                    <p>12 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/rohit-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Rohit Bhosle</h3>
+                    <p>10 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/atul-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Amit Bariya</h3>
+                    <p>8 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/shivangi-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Shivangi Prajapati</h3>
+                    <p>6 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/jogendra-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Jogendra Reddy</h3>
+                    <p>6 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/ravindrasinh-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Zala Ravindrasinh</h3>
+                    <p>6 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/harsh-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Harsh Chaugule</h3>
+                    <p>6 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/atul-vaghela-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Atul Vaghela</h3>
+                    <p>5 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/yogesh-shegar-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Yogesh Shegar</h3>
+                    <p>4 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="trainer_box">
+                  <div class="img_trainer">
+                    <img
+                      class="img-responsive blackImg"
+                      src="assets/images/trainers/hitesh-min.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="trainer_con">
+                    <h3>Hitesh Goswami</h3>
+                    <p>3.5 Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="view-all"><a href="#">view all</a></div> -->
+        </div>
+      </section>
+      <!--Trainers end-->
+
+      <!--video start-->
+      <section class="video_sec">
+        <div class="container-fluid">
+          <div class="row">
+            <a
+              id="videoThumbnailLink"
+              href="#"
+              data-width="550"
+              data-height="350"
+              class="video-link"
+            >
+              <img
+                width="60"
+                src="assets/images/play.png"
+                class="img-responsive"
+                alt=""
+              />
+            </a>
+
+            <h2>Experience the Difference!</h2>
+
+            <a
+              id="videoButtonLink"
+              href="#"
+              data-width="550"
+              data-height="350"
+              class="video-link primary-btn"
+            >
+              Watch now!
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--video end-->
+
+      <!--Timetable start-->
+      <section class="timetable_sec" id="timetable" style="display: none">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-6">
+              <h2 class="title">
+                <span>Timetable</span> Lorem ipsum dolor sit amet
+              </h2>
+              <p class="aftertitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestib
+                ulum porttitor egestas orci, vinec at velit vestibulum,
+              </p>
+            </div>
+            <div class="col-lg-2">
+              <ul class="tabs ampmtime nav nav-tabs">
+                <li class="active" rel="tab1">AM</li>
+                <li rel="tab2">PM</li>
+              </ul>
+            </div>
+            <div class="contnet-table">
+              <div id="tab1" class="tab_content">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-empty"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-time">8:00</span>
+                        <span class="td-duration">am</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-time">9:00</span>
+                        <span class="td-duration">am</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-time">10:00</span>
+                        <span class="td-duration">am</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-time">11:00</span>
+                        <span class="td-duration">am</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-time">11:30</span>
+                        <span class="td-duration">am</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">sunday</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt5.png"
+                              alt="boot-camp"
+                              width="41"
+                              height="55"
+                            />
+                          </div>
+                          <span class="td-title">BOOT CAMP</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt2.png"
+                              alt="trx"
+                              width="46"
+                              height="54"
+                            />
+                          </div>
+                          <span class="td-title">TRX</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">monday</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt2.png"
+                              alt="trx"
+                              width="46"
+                              height="54"
+                            />
+                          </div>
+                          <span class="td-title">TRX</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td class="slide-bottom two">
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">tuesday</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt3.png"
+                              alt="spinning"
+                              width="59"
+                              height="56"
+                            />
+                          </div>
+                          <span class="td-title">Spinning</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt5.png"
+                              alt="boot-camp"
+                              width="41"
+                              height="55"
+                            />
+                          </div>
+                          <span class="td-title">BOOT CAMP</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt3.png"
+                              alt="spinning"
+                              width="59"
+                              height="56"
+                            />
+                          </div>
+                          <span class="td-title">Spinning</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">WEDNESDAY</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt3.png"
+                              alt="spinning"
+                              width="59"
+                              height="56"
+                            />
+                          </div>
+                          <span class="td-title">Spinning</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td class="slide-bottom one">
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt5.png"
+                              alt="boot-camp"
+                              width="41"
+                              height="55"
+                            />
+                          </div>
+                          <span class="td-title">BOOT CAMP</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt6.png"
+                              alt="boxing"
+                              width="52"
+                              height="18"
+                            />
+                          </div>
+                          <span class="td-title">BOXING</span>
+                          <span class="td-desc">(MANAL)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt2.png"
+                              alt="trx"
+                              width="46"
+                              height="54"
+                            />
+                          </div>
+                          <span class="td-title">TRX</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">thursday</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt3.png"
+                              alt="spinning"
+                              width="59"
+                              height="56"
+                            />
+                          </div>
+                          <span class="td-title">Spinning</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="boot-camp"
+                              width="41"
+                              height="55"
+                            />
+                          </div>
+                          <span class="td-title">BOOT CAMP</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt2.png"
+                              alt="trx"
+                              width="46"
+                              height="54"
+                            />
+                          </div>
+                          <span class="td-title">TRX</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">friday</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="td-services">
+                        <div class="td-img-wrap">
+                          <img
+                            src="assets/images/tt7.png"
+                            alt="core"
+                            width="52"
+                            height="52"
+                          />
+                        </div>
+                        <span class="td-title">CORE</span>
+                        <span class="td-desc">(ANNA)</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="tab2" class="tab_content">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-empty"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-time">8:00</span>
+                        <span class="td-duration">pm</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-time">9:00</span>
+                        <span class="td-duration">pm</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-time">10:00</span>
+                        <span class="td-duration">pm</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-time">11:00</span>
+                        <span class="td-duration">pm</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="td-date-time">
+                        <span class="td-time">11:30</span>
+                        <span class="td-duration">pm</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">sunday</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt5.png"
+                              alt="boot-cpmp"
+                              width="41"
+                              height="55"
+                            />
+                          </div>
+                          <span class="td-title">BOOT CAMP</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt2.png"
+                              alt="trx"
+                              width="46"
+                              height="54"
+                            />
+                          </div>
+                          <span class="td-title">TRX</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">monday</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt2.png"
+                              alt="trx"
+                              width="46"
+                              height="54"
+                            />
+                          </div>
+                          <span class="td-title">TRX</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td class="slide-bottom two">
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">tuesday</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt3.png"
+                              alt="spinning"
+                              width="59"
+                              height="56"
+                            />
+                          </div>
+                          <span class="td-title">Spinning</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt5.png"
+                              alt="boot-camp"
+                              width="41"
+                              height="55"
+                            />
+                          </div>
+                          <span class="td-title">BOOT CAMP</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt3.png"
+                              alt="spinning"
+                              width="59"
+                              height="56"
+                            />
+                          </div>
+                          <span class="td-title">Spinning</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">WEDNESDAY</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt3.png"
+                              alt="spinning"
+                              width="59"
+                              height="56"
+                            />
+                          </div>
+                          <span class="td-title">Spinning</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td class="slide-bottom one">
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt5.png"
+                              alt="boot-camp"
+                              width="41"
+                              height="55"
+                            />
+                          </div>
+                          <span class="td-title">BOOT CAMP</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt6.png"
+                              alt="boxing"
+                              width="52"
+                              height="18"
+                            />
+                          </div>
+                          <span class="td-title">BOXING</span>
+                          <span class="td-desc">(MANAL)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt2.png"
+                              alt="trx"
+                              width="46"
+                              height="54"
+                            />
+                          </div>
+                          <span class="td-title">TRX</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">thursday</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt3.png"
+                              alt="spinning"
+                              width="59"
+                              height="56"
+                            />
+                          </div>
+                          <span class="td-title">Spinning</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="boot-camp"
+                              width="41"
+                              height="55"
+                            />
+                          </div>
+                          <span class="td-title">BOOT CAMP</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt2.png"
+                              alt="trx"
+                              width="46"
+                              height="54"
+                            />
+                          </div>
+                          <span class="td-title">TRX</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="day">friday</span></td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt1.png"
+                              alt="immediate"
+                              width="58"
+                              height="60"
+                            />
+                          </div>
+                          <span class="td-title">INTERMIDIATE</span>
+                          <span class="td-desc">(ANNA)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);">
+                        <div class="td-services">
+                          <div class="td-img-wrap">
+                            <img
+                              src="assets/images/tt4.png"
+                              alt="beginners"
+                              width="54"
+                              height="53"
+                            />
+                          </div>
+                          <span class="td-title">BEGGINERS</span>
+                          <span class="td-desc">(SHEREEN)</span>
+                        </div>
+                      </a>
+                    </td>
+                    <td>
+                      <div class="td-services">
+                        <div class="td-img-wrap">
+                          <img
+                            src="assets/images/tt7.png"
+                            alt="core"
+                            width="52"
+                            height="52"
+                          />
+                        </div>
+                        <span class="td-title">CORE</span>
+                        <span class="td-desc">(ANNA)</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Timetable end-->
+
+      <!--Gallery start-->
+      <div class="gallery" id="gallery">
+        <div
+          class="elfsight-app-5e9b30cb-35d6-44dc-a1a5-a7e6b8fa109c"
+          data-elfsight-app-lazy
+        ></div>
+        <!-- <div
+          class="footer-gallery owl-carousel owl-theme ss_carousel"
+          id="slider2"
+        >
+          <div class="item">
+            <a href="assets/images/gallery_1.png">
+              <img
+                class="img-responsive"
+                src="assets/images/gallery_1.png"
+                alt="" />
+              <i class="fa fa-link" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="item">
+            <a href="assets/images/gallery_2.png">
+              <img
+                class="img-responsive"
+                src="assets/images/gallery_2.png"
+                alt="" />
+              <i class="fa fa-link" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="item">
+            <a href="assets/images/gallery_3.png">
+              <img
+                class="img-responsive"
+                src="assets/images/gallery_3.png"
+                alt="" />
+              <i class="fa fa-link" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="item">
+            <a href="assets/images/gallery_4.png">
+              <img
+                class="img-responsive"
+                src="assets/images/gallery_4.png"
+                alt="" />
+              <i class="fa fa-link" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="item">
+            <a href="assets/images/gallery_5.png">
+              <img
+                class="img-responsive"
+                src="assets/images/gallery_5.png"
+                alt="" />
+              <i class="fa fa-link" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="item">
+            <a href="assets/images/gallery_1.png">
+              <img
+                class="img-responsive"
+                src="assets/images/gallery_1.png"
+                alt="" />
+              <i class="fa fa-link" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="item">
+            <a href="assets/images/gallery_2.png">
+              <img
+                class="img-responsive"
+                src="assets/images/gallery_2.png"
+                alt="" />
+              <i class="fa fa-link" aria-hidden="true"></i
+            ></a>
+          </div>
+        
+        
+        </div> -->
+      </div>
+      <!--Gallery end-->
+
+      <!--blog start-->
+      <section id="blog" class="blog_sec1" style="display: none">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title">
+                <span>our blogs</span> Building a community of athletic
+              </h2>
+            </div>
+            <div class="col-md-12">
+              <div class="carousel blog_list">
+                <div class="owl-carousel owl-theme ss_carousel" id="slider4">
+                  <div class="item">
+                    <div class="blog_box">
+                      <a href="blogpage_detail.html">
+                        <div class="img_blog">
+                          <img
+                            class="img-responsive"
+                            src="assets/images/1.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <div class="blog_con">
+                        <h3>
+                          <a href="blogpage_detail.html"
+                            >Lorem ipsum dolor sit amet, consectetur edipiscing
+                            elit.</a
+                          >
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Vestib ulum porttitor egestas orci, vinec at
+                          velit vestibulum,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="blog_box">
+                      <a href="blogpage_detail.html">
+                        <div class="img_blog">
+                          <img
+                            class="img-responsive"
+                            src="assets/images/2.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <div class="blog_con">
+                        <h3>
+                          <a href="blogpage_detail.html"
+                            >Lorem ipsum dolor sit amet, consectetur edipiscing
+                            elit.</a
+                          >
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Vestib ulum porttitor egestas orci, vinec at
+                          velit vestibulum,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="blog_box">
+                      <a href="blogpage_detail.html">
+                        <div class="img_blog">
+                          <img
+                            class="img-responsive"
+                            src="assets/images/3.png"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                      <div class="blog_con">
+                        <h3>
+                          <a href="blogpage_detail.html"
+                            >Lorem ipsum dolor sit amet, consectetur edipiscing
+                            elit.</a
+                          >
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Vestib ulum porttitor egestas orci, vinec at
+                          velit vestibulum,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="view-all"><a href="blog.html">view all</a></div>
+          </div>
+        </div>
+      </section>
+      <!--blog end-->
+
+      <!-- /discount start-->
+      <!-- <section class="discount_con">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="discount_title">
+                <h1>
+                  Fitness Classes This Summer.<br />Pay Now & GET 35% Discount
+                </h1>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="discount_btn">
+                <a href="#" class="discount_button">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- /discount end-->
+      <!-- /contact_form start-->
+      <!-- <div class="contact_form" id="contactSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="about_inner_page_con title_box">
+                <h2 class="title">
+                  <span>Contact Form </span>Fill the below form
+                </h2>
+              </div>
+            </div>
+          </div>
+          <form id="contact-us-form">
+            <div class="row">
+              <div class="col-md-4">
+                <input
+                  name="contactname"
+                  class="contact_form_detail"
+                  required
+                  type="text"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="col-md-4">
+                <input
+                  name="contactphone"
+                  class="contact_form_detail"
+                  required
+                  type="text"
+                  placeholder="Phone No."
+                />
+              </div>
+              <div class="col-md-4">
+                <input
+                  name="contactemail"
+                  class="contact_form_detail"
+                  required
+                  type="text"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="col-md-12">
+                <textarea
+                  name="contactmessage"
+                  class="contact_form_detail1"
+                  required
+                  placeholder="Your Messge"
+                ></textarea>
+              </div>
+              <div class="submit_btn_box">
+                <input
+                  name="submit"
+                  id="contactSubmitBtn"
+                  class="submit_btn hvr-shutter-out-horizontal"
+                  type="submit"
+                  value="Submit Now"
+                />
+                <span
+                  id="contactSubmitLoader"
+                  class="d-none"
+                  style="margin-left: 10px"
+                >
+                  <i class="fas fa-spinner fa-spin"></i>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div> -->
+      <!--map start-->
+      <div id="contactus" class="map-section">
+        <div class="map_iframe">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14731.710031225665!2d73.14158040414585!3d22.280303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc79e98a740a5%3A0x7ddb7d68a925bfcf!2sSun%20Pharma%20Rd%2C%20opp.%20Newyork%20Bakery%2C%20near%20Pramukh%20Swami%20Nagar%2C%20Pramukh%20Swami%20nagar%2C%20Atladara%2C%20Vadodara%2C%20Gujarat%20390012!5e0!3m2!1sen!2sin!4v1721983864050!5m2!1sen!2sin"
+            width="100%"
+            height="570"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="conatct-us wow">
+          <form id="contact-us-form">
+            <h2>Contact Us</h2>
+            <p>
+              <input
+                type="text"
+                name="contactname"
+                required
+                placeholder="Name"
+              />
+            </p>
+            <p>
+              <input
+                type="email"
+                name="contactemail"
+                required
+                placeholder="Email"
+              />
+            </p>
+            <p>
+              <input
+                type="tel"
+                name="contactphone"
+                required
+                placeholder="Phone"
+              />
+            </p>
+            <!-- <p>
+    <textarea name="contactmessage" placeholder="Message"></textarea>
+  </p> -->
+
+            <!-- Submit Button -->
+            <input
+              name="submit"
+              id="contactSubmitBtn"
+              class="send_mes"
+              type="submit"
+              value="Submit"
+            />
+
+            <!-- Loading Text (Hidden by default) -->
+            <span id="contactSubmitLoader" class="d-none"></span>
+          </form>
+        </div>
+      </div>
+      <!--map end-->
+      <!-- /breadcrumb start-->
+      <!--footer start-->
+      <footer class="main-footer" id="footerSection">
+        <div class="footer">
+          <div class="container">
+            <div class="slide-top footer-logo">
+              <a href="index.html">
+                <img
+                  style="width: 200px"
+                  class="img-responsive"
+                  src="assets/images/logo/logo.png"
+                  alt=""
+                />
+                <!-- <h2 class="logo_name">
+                  GYM <span class="white_text">FIT </span>
+                </h2> -->
+              </a>
+            </div>
+            <div class="slide-bottom footer-menu">
+              <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="#gallery">Our Programs</a></li>
+                <li><a href="gallery.html">Gallery </a></li>
+                <li>
+                  <a
+                    href="#"
+                    class="js-scroll-trigger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#pricingModal"
+                  >
+                    PRICING
+                  </a>
+                </li>
+                <li><a href="#contactus">Contact</a></li>
+              </ul>
+            </div>
+            <a
+              id="whatsappChatButton"
+              href="https://wa.me/8320279007"
+              target="_blank"
+              class="whatsapp-btn"
+            >
+              <i class="fa fa-whatsapp" style="font-size: 20px"></i> Chat with
+              Us!
+            </a>
+            <br /><br />
+            <div
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                text-align: center;
+                color: white;
+                line-height: 1.6;
+              "
+            >
+              Opp. Newyork Bakery, Near Pramukh Swami Nagar, Beside Nirvaan
+              Cafe, Sunpharma Road, Vadodara, Gujarat - 390012
+            </div>
+            <!-- <br />
+            <div
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                text-align: center;
+                color: white;
+                line-height: 1.6;
+              "
+            >
+              Mon - Sat 6:00AM - 10:00PM Sunday Closed
+            </div> -->
+            <br />
+            <div class="slide-bottom social footer-social">
+              <span>Follow us on</span>
+              <ul>
+                <li class="faebook">
+                  <a href="https://www.facebook.com/itsleocor" target="_blank"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <!-- <li class="twitter">
+                  <a href="https://www.facebook.com/itsleocor/" target="_blank"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li> -->
+                <li class="insta">
+                  <a href="https://www.instagram.com/leocorgym/" target="_blank"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="slide-bottom copyright-text">
+              <p>
+                © 2025 LEOCOR. Developed by
+                <span style="text-decoration: underline"
+                  ><a href="https://diwizon.com/" target="_blank"
+                    >Diwizon</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--footer end-->
+    </div>
+    <a href="#" class="scrollToTop"
+      ><img src="assets/images/arrow.svg" alt="arrow"
+    /></a>
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- scroll_to_top -->
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+
+    <!-- classes_portfolio -->
+    <script src="assets/js/jquery.isotope.min.js"></script>
+
+    <!-- carousel slider -->
+    <script src="assets/js/owl.carousel.js"></script>
+
+    <!-- blog -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- wow -->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- fake start -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <!-- Swiper CSS -->
+    <!-- Swiper CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- fake end -->
+    <script>
+      let swiper;
+
+      function initSwiper() {
+        if (window.innerWidth <= 768 && !swiper) {
+          swiper = new Swiper(".swiper-container", {
+            loop: true,
+            slidesPerView: "auto", // Allow flexible number per view
+            spaceBetween: 30,
+            centeredSlides: false,
+            speed: 3000, // Adjust speed for continuous feel
+            autoplay: {
+              delay: 0, // No delay between transitions
+              disableOnInteraction: false,
+            },
+          });
+        }
+      }
+      document.addEventListener("DOMContentLoaded", initSwiper);
+      window.addEventListener("resize", () => {
+        if (window.innerWidth <= 768 && !swiper) {
+          initSwiper();
+        }
+      });
+    </script>
+
+    <!-- <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          var myModal = new bootstrap.Modal(document.getElementById("myModal"));
+          myModal.show();
+        }, 3000);
+      });
+    </script> -->
+    <!-- <script>
+      document
+        .getElementById("enquiryForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const submitBtn = document.getElementById("submitBtn");
+          const loader = document.getElementById("submitLoader");
+          const btnText = document.getElementById("submitBtnText");
+
+          // Show loader, hide text
+          submitBtn.disabled = true;
+          btnText.classList.add("d-none");
+          loader.classList.remove("d-none");
+
+          const name = document.getElementById("name").value;
+          const phone = document.getElementById("phone").value;
+          const email = document.getElementById("email").value;
+          const countryCode = document.getElementById("countryCode").value;
+          const fullPhone = `${countryCode.split(" ")[1]} ${phone}`;
+
+          const data = {
+            emails: ["info@leocorgym.com"],
+            subject: "New Pricing Enquiry",
+            message: `
+        <h2>New Pricing Enquiry</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Phone:</strong> ${fullPhone}</p>
+        <p><strong>Email:</strong> ${email}</p>
+      `,
+          };
+
+          try {
+            const response = await fetch(
+              "https://mailer-5x4h33dpla-uc.a.run.app/",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+              }
+            );
+
+            const resultText = await response.text();
+
+            if (response.ok) {
+              window.open("thankyou.html", "_blank");
+
+              // Reset the form
+              document.getElementById("enquiryForm").reset();
+
+              // Close the Bootstrap modal
+              const modal = bootstrap.Modal.getInstance(
+                document.getElementById("myModal")
+              );
+              if (modal) modal.hide();
+            } else {
+              alert(`Error: ${resultText}`);
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again later.");
+          } finally {
+            // Re-enable button, reset text and loader (if needed)
+            submitBtn.disabled = false;
+            btnText.classList.remove("d-none");
+            loader.classList.add("d-none");
+          }
+        });
+    </script>
+
+    <script>
+      document
+        .getElementById("pricingForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const submitBtn = document.getElementById("contactSubmitBtn");
+          const loader = document.getElementById("contactSubmitLoader");
+          const btnText = document.getElementById("contactSubmitBtnText");
+
+          submitBtn.disabled = true;
+          btnText.classList.add("d-none");
+          loader.classList.remove("d-none");
+
+          const name = document.getElementById("contactName").value;
+          const phone = document.getElementById("contactPhone").value;
+          const email = document.getElementById("contactEmail").value;
+          const countryCode =
+            document.getElementById("contactCountryCode").value;
+          const fullPhone = `${countryCode.split(" ")[1]} ${phone}`;
+
+          const data = {
+            emails: ["info@leocorgym.com"],
+            subject: "New  Submission",
+            message: `
+          <h2>New Contact Message</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Phone:</strong> ${fullPhone}</p>
+          <p><strong>Email:</strong> ${email}</p>
+        `,
+          };
+
+          try {
+            const response = await fetch(
+              "https://mailer-5x4h33dpla-uc.a.run.app/",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+              }
+            );
+
+            const resultText = await response.text();
+
+            if (response.ok) {
+              window.open("thankyou.html", "_blank");
+              document.getElementById("pricingForm").reset();
+              // const modal = bootstrap.Modal.getInstance(
+              //   document.getElementById("contactModal")
+              // );
+              if (modal) modal.hide();
+            } else {
+              alert(`Error: ${resultText}`);
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again later.");
+          } finally {
+            submitBtn.disabled = false;
+            btnText.classList.remove("d-none");
+            loader.classList.add("d-none");
+          }
+        });
+    </script> -->
+    <script>
+      async function handleFormSubmit(e, formId) {
+        e.preventDefault();
+
+        const form = document.getElementById(formId);
+        const isEnquiryForm = formId === "enquiryForm";
+
+        const phone = form.querySelector("input[name='phone']").value;
+
+        const submitBtn = form.querySelector("button[type='submit']");
+        const btnText = form.querySelector(".submitBtnText");
+        const loader = form.querySelector(".submitLoader");
+
+        submitBtn.disabled = true;
+        btnText.classList.add("d-none");
+        loader.classList.remove("d-none");
+
+        let subject = "";
+        let message = "";
+
+        if (isEnquiryForm) {
+          subject = "New Offer Enquiry from Website";
+          message = `
+        <h2>New Offer Enquiry from Website</h2>
+        <p><strong>Phone:</strong> ${phone}</p>
+      `;
+        } else {
+          const name = form.querySelector("input[name='name']")?.value || "";
+          const email = form.querySelector("input[name='email']")?.value || "";
+
+          subject = "New Pricing Enquiry from Website";
+          message = `
+        <h2>New Pricing Enquiry from Website</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Email:</strong> ${email}</p>
+      `;
+        }
+
+        const data = {
+          emails: ["info@leocorgym.com"],
+          subject,
+          message,
+        };
+
+        try {
+          const response = await fetch(
+            "https://mailer-5x4h33dpla-uc.a.run.app/",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            }
+          );
+
+          const resultText = await response.text();
+          console.log("Server response:", resultText);
+
+          if (response.ok) {
+            window.open("thankyou.html", "_blank");
+            form.reset();
+
+            const modalElement = form.closest(".modal");
+            if (modalElement) {
+              const modalInstance = bootstrap.Modal.getInstance(modalElement);
+              if (modalInstance) modalInstance.hide();
+            }
+          } else {
+            alert(`Error: ${resultText}`);
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          alert("An error occurred. Please try again later.");
+        } finally {
+          submitBtn.disabled = false;
+          btnText.classList.remove("d-none");
+          loader.classList.add("d-none");
+        }
+      }
+
+      document
+        .getElementById("enquiryForm")
+        ?.addEventListener("submit", (e) => handleFormSubmit(e, "enquiryForm"));
+
+      document
+        .getElementById("pricingForm")
+        ?.addEventListener("submit", (e) => handleFormSubmit(e, "pricingForm"));
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollTriggers = document.querySelectorAll(".js-scroll-trigger");
+
+        scrollTriggers.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+              const isMobile = window.innerWidth <= 768;
+              const offset = isMobile ? 60 : 75;
+
+              window.scrollTo({
+                top: targetSection.offsetTop - offset,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document
+        .getElementById("contact-us-form")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const submitBtn = document.getElementById("contactSubmitBtn");
+          const loader = document.getElementById("contactSubmitLoader");
+
+          // Show loading state
+          submitBtn.disabled = true;
+          submitBtn.value = "Submitting...";
+          loader.classList.remove("d-none");
+
+          // Get form values
+          const name = document.querySelector(
+            "input[name='contactname']"
+          ).value;
+          const phone = document.querySelector(
+            "input[name='contactphone']"
+          ).value;
+          const email = document.querySelector(
+            "input[name='contactemail']"
+          ).value;
+          // const messageField = document.querySelector(
+          //   "textarea[name='contactmessage']"
+          // );
+          // const message = messageField ? messageField.value : "";
+
+          const data = {
+            emails: ["info@leocorgym.com"],
+            subject: "New Pricing Enquiry from Website",
+            message: `
+          <h2>New Pricing Enquiry from Website</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Phone:</strong> ${phone}</p>
+          <p><strong>Email:</strong> ${email}</p>
+       
+        `,
+          };
+
+          try {
+            const response = await fetch(
+              "https://mailer-5x4h33dpla-uc.a.run.app/",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+              }
+            );
+
+            const resultText = await response.text();
+
+            if (response.ok) {
+              window.open("thankyou.html", "_blank");
+              document.getElementById("contact-us-form").reset();
+            } else {
+              // alert(`Error: ${resultText}`);
+            }
+          } catch (error) {
+            // console.error("Error:", error);
+            alert("An error occurred. Please try again later.");
+          } finally {
+            // Reset button
+            submitBtn.disabled = false;
+            submitBtn.value = "Submit";
+            loader.classList.add("d-none");
+          }
+        });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+
+        document
+          .querySelectorAll(".navbar-collapse .nav-link > a")
+          .forEach((link) => {
+            link.addEventListener("click", function () {
+              // Close only if the link is NOT a dropdown toggle
+              if (!link.classList.contains("dropdown-toggle")) {
+                if (navbarCollapse.classList.contains("show")) {
+                  const collapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: true,
+                  });
+                  collapse.hide();
+                }
+              }
+            });
+          });
+
+        document
+          .querySelectorAll(".navbar-collapse .dropdown-item")
+          .forEach((item) => {
+            item.addEventListener("click", function (e) {
+              const isModalTrigger =
+                item.hasAttribute("data-bs-toggle") &&
+                item.getAttribute("data-bs-toggle") === "modal";
+
+              // Only close the menu if the item opens a modal
+              if (isModalTrigger) {
+                if (navbarCollapse.classList.contains("show")) {
+                  const collapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: true,
+                  });
+                  collapse.hide();
+                }
+              } else {
+                e.stopPropagation(); // prevent menu from closing
+              }
+            });
+          });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("#slider3").owlCarousel({
+          loop: true,
+          margin: 50,
+          nav: true,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 3000, // 3 seconds between slides
+          // autoplayHoverPause: true, // pause on hover
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+
+  <!-- Mirrored from netizensstore.com/gymfit_theme/html/multipage_3/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jul 2025 10:10:24 GMT -->
+</html>
