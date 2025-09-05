@@ -967,7 +967,7 @@
       </section> -->
       <!-- /discount end-->
       <!--map start-->
-      <div id="contactus" class="map-section">
+      <div class="map-section">
         <div class="map_iframe">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14731.710031225665!2d73.14158040414585!3d22.280303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc79e98a740a5%3A0x7ddb7d68a925bfcf!2sSun%20Pharma%20Rd%2C%20opp.%20Newyork%20Bakery%2C%20near%20Pramukh%20Swami%20Nagar%2C%20Pramukh%20Swami%20nagar%2C%20Atladara%2C%20Vadodara%2C%20Gujarat%20390012!5e0!3m2!1sen!2sin!4v1721983864050!5m2!1sen!2sin"
@@ -980,7 +980,7 @@
           ></iframe>
         </div>
 
-        <div class="conatct-us wow">
+        <div id="contactus" class="conatct-us wow">
           <form id="contact-us-form">
             <h2>Contact Us</h2>
             <p>
@@ -1161,6 +1161,65 @@
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+        const navbarToggler = document.querySelector(".navbar-toggler");
+
+        // Close navbar on nav-link clicks (except dropdown toggles)
+        document
+          .querySelectorAll(".navbar-collapse .nav-link")
+          .forEach((link) => {
+            link.addEventListener("click", function () {
+              if (!link.classList.contains("dropdown-toggle")) {
+                if (navbarCollapse.classList.contains("show")) {
+                  const collapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: true,
+                  });
+                  collapse.hide();
+                }
+              }
+            });
+          });
+
+        // Close navbar on dropdown-item that triggers modal
+        document
+          .querySelectorAll(".navbar-collapse .dropdown-item")
+          .forEach((item) => {
+            item.addEventListener("click", function (e) {
+              const isModalTrigger =
+                item.hasAttribute("data-bs-toggle") &&
+                item.getAttribute("data-bs-toggle") === "modal";
+
+              if (isModalTrigger) {
+                if (navbarCollapse.classList.contains("show")) {
+                  const collapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: true,
+                  });
+                  collapse.hide();
+                }
+              } else {
+                e.stopPropagation(); // Prevent menu from closing
+              }
+            });
+          });
+
+        // ✅ Close navbar if clicked outside of it
+        document.addEventListener("click", function (event) {
+          const isNavbarOpen = navbarCollapse.classList.contains("show");
+          const isClickInsideNavbar =
+            navbarCollapse.contains(event.target) ||
+            navbarToggler.contains(event.target);
+
+          if (isNavbarOpen && !isClickInsideNavbar) {
+            const collapse = new bootstrap.Collapse(navbarCollapse, {
+              toggle: true,
+            });
+            collapse.hide();
+          }
+        });
+      });
+    </script>
     <script>
       document
         .getElementById("enquiryForm")
