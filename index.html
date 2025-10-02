@@ -488,6 +488,56 @@
       .custom-close-btn:hover {
         opacity: 1;
       }
+
+      /* insta */
+      .insta {
+        width: 100%;
+        max-width: 100vw;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .insta-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .insta-item {
+        flex: 0 0 17%; /* 4 items in a row = 25% each */
+        box-sizing: border-box;
+        /* padding: 5px; optional spacing */
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        aspect-ratio: 1 / 1; /* keep square ratio */
+      }
+
+      .insta-item iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* 📱 Responsive: fewer items on smaller screens */
+      @media (max-width: 1024px) {
+        .insta-item {
+          flex: 0 0 33.33%; /* 3 items in a row */
+        }
+      }
+
+      @media (max-width: 768px) {
+        .insta-item {
+          flex: 0 0 50%; /* 2 items in a row */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .insta-item {
+          flex: 0 0 100%; /* 1 item in a row */
+        }
+      }
     </style>
   </head>
 
@@ -1897,9 +1947,65 @@
           </div>
         </div>
       </section>
-
       <!--video end-->
-
+      <div class="insta">
+        <div class="insta-track" id="instaTrack">
+          <div class="insta-item">
+            <iframe
+              src="https://www.instagram.com/reel/DPIlS1RiPEV/embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="insta-item">
+            <iframe
+              src="https://www.instagram.com/p/DO_NpUfEQNl/embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="insta-item">
+            <iframe
+              src="https://www.instagram.com/reel/DN0ER_W0PQQ/embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="insta-item">
+            <iframe
+              src="https://www.instagram.com/reel/DNf-7qaRitF/embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="insta-item">
+            <iframe
+              src="https://www.instagram.com/reel/DNGPhr7yit2/embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="insta-item">
+            <iframe
+              src="https://www.instagram.com/reel/DMx-WpHS-50/embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="insta-item">
+            <iframe
+              src="https://www.instagram.com/reel/DMuTaq8R0-k/embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="insta-item">
+            <iframe
+              src="https://www.instagram.com/reel/DMo7HDxtjUr/embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="insta-item">
+            <iframe
+              src="https://www.instagram.com/reel/DLFVQCeqe9r/embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
       <!--Timetable start-->
       <section class="timetable_sec" id="timetable" style="display: none">
         <div class="container">
@@ -2997,82 +3103,13 @@
       <!--Timetable end-->
 
       <!--Gallery start-->
-      <div class="gallery" id="gallery">
+      <!-- <div class="gallery" id="gallery">
         <div
           class="elfsight-app-5e9b30cb-35d6-44dc-a1a5-a7e6b8fa109c"
           data-elfsight-app-lazy
         ></div>
-        <!-- <div
-          class="footer-gallery owl-carousel owl-theme ss_carousel"
-          id="slider2"
-        >
-          <div class="item">
-            <a href="assets/images/gallery_1.png">
-              <img
-                class="img-responsive"
-                src="assets/images/gallery_1.png"
-                alt="" />
-              <i class="fa fa-link" aria-hidden="true"></i
-            ></a>
-          </div>
-          <div class="item">
-            <a href="assets/images/gallery_2.png">
-              <img
-                class="img-responsive"
-                src="assets/images/gallery_2.png"
-                alt="" />
-              <i class="fa fa-link" aria-hidden="true"></i
-            ></a>
-          </div>
-          <div class="item">
-            <a href="assets/images/gallery_3.png">
-              <img
-                class="img-responsive"
-                src="assets/images/gallery_3.png"
-                alt="" />
-              <i class="fa fa-link" aria-hidden="true"></i
-            ></a>
-          </div>
-          <div class="item">
-            <a href="assets/images/gallery_4.png">
-              <img
-                class="img-responsive"
-                src="assets/images/gallery_4.png"
-                alt="" />
-              <i class="fa fa-link" aria-hidden="true"></i
-            ></a>
-          </div>
-          <div class="item">
-            <a href="assets/images/gallery_5.png">
-              <img
-                class="img-responsive"
-                src="assets/images/gallery_5.png"
-                alt="" />
-              <i class="fa fa-link" aria-hidden="true"></i
-            ></a>
-          </div>
-          <div class="item">
-            <a href="assets/images/gallery_1.png">
-              <img
-                class="img-responsive"
-                src="assets/images/gallery_1.png"
-                alt="" />
-              <i class="fa fa-link" aria-hidden="true"></i
-            ></a>
-          </div>
-          <div class="item">
-            <a href="assets/images/gallery_2.png">
-              <img
-                class="img-responsive"
-                src="assets/images/gallery_2.png"
-                alt="" />
-              <i class="fa fa-link" aria-hidden="true"></i
-            ></a>
-          </div>
-        
-        
-        </div> -->
-      </div>
+       
+      </div> -->
       <!--Gallery end-->
 
       <!--blog start-->
@@ -3408,7 +3445,7 @@
                     ><i class="fa fa-twitter" aria-hidden="true"></i
                   ></a>
                 </li> -->
-                <li class="insta">
+                <li>
                   <a href="https://www.instagram.com/leocorgym/" target="_blank"
                     ><i class="fa fa-instagram"></i
                   ></a>
@@ -3963,6 +4000,46 @@
             },
           },
         });
+      });
+    </script>
+    <script>
+      const track = document.getElementById("instaTrack");
+      const items = document.querySelectorAll(".insta-item");
+      const totalItems = items.length;
+
+      // Clone slides for seamless loop
+      track.innerHTML += track.innerHTML;
+
+      let index = 0;
+
+      function getItemWidth() {
+        return document.querySelector(".insta-item").offsetWidth; // auto width
+      }
+
+      function moveCarousel() {
+        index++;
+        const itemWidth = getItemWidth();
+
+        track.style.transition = "transform 0.5s ease-in-out";
+        track.style.transform = `translateX(-${index * itemWidth}px)`;
+
+        if (index >= totalItems) {
+          // After animation ends, reset without jump
+          setTimeout(() => {
+            track.style.transition = "none";
+            index = 0;
+            track.style.transform = `translateX(0)`;
+          }, 500);
+        }
+      }
+
+      setInterval(moveCarousel, 3000);
+
+      // Reset index on window resize (mobile/desktop switch)
+      window.addEventListener("resize", () => {
+        index = 0;
+        track.style.transition = "none";
+        track.style.transform = `translateX(0)`;
       });
     </script>
   </body>
